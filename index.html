@@ -4,12 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio jannah</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="main-header p-[8px]">
+        <div class="logo"></div>
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message us</a>
+
+
+        
+
+        </nav>
+    </header>
+    <hr>
+    <main>
+        
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">welcome to jannah company</h2>
+            <p class="mt-2">we are glad to have you here! explore our website to learn more about us and our work.</p>
+
+        </section>
+        <hr/>
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="our-profile">about jannah company</h2>
+            <p class="mt-2">jannah company is dedicated to providing tap-notch services in various industries.</p>
+
+        </section>
+        <hr/>
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="portfolio">our portfolio</h2>
+            <p class="mt-2">take a look at our diverse range of projects that showcase our skills and expertise.</p>
+
+        </section>
+        <hr/>
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+            <h2 class="text-xl font-bold" id="message-us">message us</h2>
+            <p class="mt-2">get in touch with us to learn more about our services or to discuss your project needs.</p>
+</header>
+            <form class="mt-4 flex flex-col gap-4" action="#">
+                <div class="flex flex-col">
+                    <label for="name" class="mb-2 font-semibold">Name:</label>
+                    <input type="text" id="name" name="name" class="border p-2 rounded" required>
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="mb-2 font-semibold">Email:</label>
+                    <input type="email" id="email" name="email" class="border p-2 rounded" required>
+                </div>
+                <div class="flex flex-col">
+                    <label for="message" class="mb-2 font-semibold">Message:</label>
+                    <textarea id="message" name="message" rows="4" class="border p-2 rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Send Message</button>
+            </form>
+        </section>
+        </main>
+
+    <footer>
+        <div class="text-center p-4">
+
+        </div>
+    </footer>
     <script src="js/script.js"></script>
     
 </body>
